@@ -12,8 +12,10 @@ function App() {
   const [sushis, setSushis] = useState([])
 
   useEffect(() => {
-    fetch(API).then(r => r.json()).then(setSushis)
-  }, [])
+  //   fetch(API).then(r => r.json()).then(setSushis)
+  // }, [])
+  fetch(API).then(r => r.json()).then(data => console.log(data))
+
 
 
 
@@ -22,7 +24,7 @@ function App() {
       <SushiContainer sushis = {sushis}  />
       <Table />
     </div>
-  );
+  )
 }
  
 export default App;
