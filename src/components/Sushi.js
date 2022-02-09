@@ -1,4 +1,4 @@
-import React, from "react";
+import React from "react";
 
 function Sushi({sushi}) {
   return (
@@ -7,7 +7,7 @@ function Sushi({sushi}) {
         {/* Tell me if this sushi has been eaten! */}
         {false ? null : (
           <img
-            src={/* Give me an image source! */ null}
+            src={sushi.img_url}
             alt={sushi.name}
             width="100%"
           />
